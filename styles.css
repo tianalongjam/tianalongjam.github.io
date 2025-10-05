@@ -158,6 +158,109 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
+/* Skills */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skill-header i {
+  font-size: 2rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.skill-header h3 {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  color: var(--text);
+}
+
+.level {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  background: #e5e5e5;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  animation: fill 1.8s ease-out;
+}
+
+/* Color-coded progress bars */
+/* .python { width: 92%; background: linear-gradient(90deg, #ffd43b, #ffb703); }
+.r { width: 70%; background: linear-gradient(90deg, #276ef1, #4285f4); }
+.html { width: 90%; background: linear-gradient(90deg, #e44d26, #f16529); }
+.css { width: 88%; background: linear-gradient(90deg, #264de4, #2965f1); }
+.sql { width: 75%; background: linear-gradient(90deg, #00b4d8, #0077b6); } */
+
+/* More vibrant color gradients for each skill */
+.python {
+  width: 92%;
+  background: linear-gradient(90deg, #f7b500, #ff7b00);
+}
+
+.r {
+  width: 70%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+}
+
+.html {
+  width: 90%;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+}
+
+.css {
+  width: 88%;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+}
+
+.sql {
+  width: 75%;
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+}
+
+@keyframes fill {
+  from { width: 0; }
+  to { width: var(--fill-width); }
+}
+
+
+
 /* Coursework stuff */
 
 .rounded_desc p{
