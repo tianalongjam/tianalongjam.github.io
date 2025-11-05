@@ -230,12 +230,12 @@ header nav a:hover {
 
 /* More vibrant color gradients for each skill */
 .python {
-  width: 92%;
+  width: 95%;
   background: linear-gradient(90deg, #f7b500, #ff7b00);
 }
 
 .r {
-  width: 70%;
+  width: 80%;
   background: linear-gradient(90deg, #007bff, #00c6ff);
 }
 
@@ -250,7 +250,7 @@ header nav a:hover {
 }
 
 .sql {
-  width: 75%;
+  width: 80%;
   background: linear-gradient(90deg, #00b09b, #96c93d);
 }
 
