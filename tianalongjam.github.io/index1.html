@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiana Longjam | index1</title>
+  <link rel="stylesheet" href="styles1.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Tiana Longjam</h1>
+    <p>Data Science & Mathematics | UW–Madison</p>
+    <div class="links">
+      <a href="mailto:longjam@wisc.edu">Email</a>
+      <a href="https://linkedin.com/in/tiana-longjam" target="_blank">LinkedIn</a>
+      <a href="https://github.com/tianalongjam" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Interests -->
+  <section class="section">
+    <h2>Interests</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Machine Learning</h3>
+        <p>Deep learning architectures, foundations of ML with real-world applications.</p>
+      </div>
+      <div class="card">
+        <h3>Trustworthy AI</h3>
+        <p>Robustness to attacks, privacy, and reasoning under uncertainty.</p>
+      </div>
+      <div class="card">
+        <h3>Data Visualization</h3>
+        <p>Creating interactive and interpretable ways to understand data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section alt">
+    <h2>Experience</h2>
+    <div class="exp">
+      <div class="exp-header" onclick="toggleDetails('exp1')">
+        <h3>Data Science Intern | Deloitte</h3>
+        <span>Jun – Aug 2024</span>
+      </div>
+      <ul id="exp1" class="details">
+        <li>Engineered datasets analyzing 5+ years of financial data for loyalty case study.</li>
+        <li>Optimized retail website frontend with HTML, improving UX.</li>
+        <li>Performed financial data analysis in Python, strengthening analytical skills.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-header" onclick="toggleDetails('exp2')">
+        <h3>Wisconsin Emerging Scholars | UW–Madison</h3>
+        <span>Jan 2024 – Dec 2025</span>
+      </div>
+      <ul id="exp2" class="details">
+        <li>Earned extra credits through co-enrollment in advanced calculus courses.</li>
+        <li>Contributed to collaborative learning with diverse peers.</li>
+        <li>Developed strong problem-solving techniques.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Bias & Source Diversity Checker</h3>
+        <p>Analyzed web search results for bias and diversity with sentiment analysis + visualization.</p>
+      </div>
+      <div class="card">
+        <h3>Regression Modelling</h3>
+        <p>Built regression models with geospatial + tabular data to predict Wisconsin census data.</p>
+      </div>
+      <div class="card">
+        <h3>EDGAR Web Logs</h3>
+        <p>Parsed massive SEC datasets with regex & classes, uncovering global scraping patterns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Tiana Longjam · Built with HTML + CSS
+  </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

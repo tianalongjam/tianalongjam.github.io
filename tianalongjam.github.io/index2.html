@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiana Longjam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">TL</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">about</a>
+      <a href="#experience" class="nav-link">experience</a>
+      <a href="#projects" class="nav-link">projects</a>
+      <a href="#skills" class="nav-link">skills</a>
+      <a href="mailto:longjam@wisc.edu" class="nav-link nav-cta">contact ↗</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-text" id="hero-bg-text">DATA</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span>Available for internships · Madison, WI</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="hero-name-line" id="hero-line1">Tiana</span>
+        <span class="hero-name-line italic" id="hero-line2">Longjam</span>
+      </h1>
+      <div class="hero-meta">
+        <p class="hero-desc">Data Science &amp; Mathematics at UW–Madison.<br>Building tools that make sense of complex systems.</p>
+        <div class="hero-links">
+          <a href="https://linkedin.com/in/tiana-longjam" target="_blank" class="hero-link">LinkedIn ↗</a>
+          <a href="https://github.com/tianalongjam" target="_blank" class="hero-link">GitHub ↗</a>
+          <a href="mailto:longjam@wisc.edu" class="hero-link">Email ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about-section reveal">
+    <div class="section-inner">
+      <div class="section-label">01 — about</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">I'm a data scientist<br><em>who loves hard problems.</em></h2>
+          <p>I'm Tiana, a junior at UW–Madison double majoring in Data Science and Mathematics, with a minor in Business focusing on Finance and Accounting.</p>
+          <p>My work spans scientific machine learning, neural PDE solvers, full-stack data products, and AI applications. I care about doing things rigorously — both the mathematics and the engineering.</p>
+          <p>One of my favorite SDGs is Reducing Inequalities. I want my work to matter beyond the screen.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num">2</span>
+            <span class="stat-label">majors</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">years coding</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">50×</span>
+            <span class="stat-label">L∞ improvement<br>in research</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">2</span>
+            <span class="stat-label">hackathon<br>projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section experience-section">
+    <div class="section-inner">
+      <div class="section-label">02 — experience</div>
+      <h2 class="section-heading reveal">Where I've worked.</h2>
+
+      <div class="exp-list">
+
+        <div class="exp-item reveal" data-index="1">
+          <div class="exp-year">2026</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">AI Intern — SAIL</h3>
+                <p class="exp-sub">UW–Madison Summer of AI Laboratory · May 2026 – Present</p>
+              </div>
+              <span class="exp-tag">current</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed a full user history database forming the backbone of personalization across a 4-track speech exercise program</li>
+              <li>Built a progress dashboard surfacing fluency scores, pronunciation accuracy trends, and sound-level performance breakdowns</li>
+              <li>Measured pronunciation improvement between sessions by mathematically comparing audio recordings, enabling objective tracking without self-reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal" data-index="2">
+          <div class="exp-year">2026</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Research Assistant — Scientific ML &amp; Numerical Methods</h3>
+                <p class="exp-sub">University of Wisconsin–Madison · Jan 2026 – Present</p>
+              </div>
+              <span class="exp-tag">research</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Outperformed classical semi-Lagrangian methods by up to 50× in L∞ error via a meshless, GPU-parallelizable neural PDE solver in PyTorch across 8-dimensional problems</li>
+              <li>Reduced computational cost 10× by integrating natural gradient preconditioning and adaptive sampling into a time-sequential neural solver</li>
+              <li>Achieved under 1% relative L² error on nonlinear Vlasov-Poisson equations via rigorous four-component error analysis and a second-order predictor-corrector scheme</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal" data-index="3">
+          <div class="exp-year">2025</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Community Assistant</h3>
+                <p class="exp-sub">UW–Madison University Housing · Nov 2024 – Jun 2026</p>
+              </div>
+              <span class="exp-tag">operations</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Managed desk operations using StarRez, SharePoint, and EMS; maintained security and confidentiality protocols</li>
+              <li>Tracked and organized information across spreadsheets and web-based systems for operational tasks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal" data-index="4">
+          <div class="exp-year">2024</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Data Science Intern</h3>
+                <p class="exp-sub">Deloitte · Jun – Aug 2024</p>
+              </div>
+              <span class="exp-tag">industry</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Engineered and consolidated datasets from 5+ financial years of client BIG data for a Loyalty Case Study</li>
+              <li>Optimized front-end HTML components for a new retail website, improving UI and user experience</li>
+              <li>Conducted extensive data analysis using Python and Pandas to generate financial conclusions</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects-section">
+    <div class="section-inner">
+      <div class="section-label">03 — projects</div>
+      <h2 class="section-heading reveal">Things I've built.</h2>
+
+      <!-- Hackathons -->
+      <div class="projects-eyebrow reveal">Hackathons</div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal magnetic" data-index="1">
+          <div class="project-card-inner">
+            <div class="project-num">01</div>
+            <div class="project-tags-row">
+              <span class="ptag">CheeseHacks 2026</span>
+              <span class="ptag">React · FastAPI · Flask</span>
+            </div>
+            <h3 class="project-title">PrivacyLens</h3>
+            <p class="project-desc">Full-stack privacy audit app. Upload a phone screenshot — scan 30+ apps, get plain-English privacy breakdowns in under 30 seconds. 90%+ app detection accuracy using Google Gemini Vision.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/PrivacyLens--CheeseHacks-Hackathon/tree/main" target="_blank" class="project-link">View project ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic" data-index="2">
+          <div class="project-card-inner">
+            <div class="project-num">02</div>
+            <div class="project-tags-row">
+              <span class="ptag">MadData 2026</span>
+              <span class="ptag">React · Supabase · Express</span>
+            </div>
+            <h3 class="project-title">Reflect</h3>
+            <p class="project-desc">Mental health web app with a facility finder, mood tracker, AI journal, and streak tracker. Integrated Google Maps APIs across 8,000+ SAMHSA-verified facilities; parsed 60+ service codes into a PostgreSQL database.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/Reflect-MadHacks" target="_blank" class="project-link">View project ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Personal Projects -->
+      <div class="projects-eyebrow reveal" style="margin-top: 3rem;">Personal projects</div>
+      <div class="projects-grid projects-grid-3">
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">03</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · Exa AI · HuggingFace</span>
+            </div>
+            <h3 class="project-title">Bias &amp; Source Diversity Checker</h3>
+            <p class="project-desc">Analyzes search results for source bias using HHI, Gini, and Shannon entropy metrics. Sentiment analysis + visualizations.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/search-engine-with-exa-ai" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">04</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · GeoPandas · Scikit-learn</span>
+            </div>
+            <h3 class="project-title">Wisconsin Census Population Predictor</h3>
+            <p class="project-desc">Multi-source geospatial + raster + relational data pipeline. Regression models predicting county and tract-level population.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/Wisconsin-Census-Population-Predictor" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">05</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · OOP · BST</span>
+            </div>
+            <h3 class="project-title">Loan Insights &amp; Fair Lending Analysis</h3>
+            <p class="project-desc">Custom OOP framework modeling 2020 Wisconsin HMDA loan data. BST for optimized lookups + bias analysis across banks.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/loans_analysis" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">06</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · Pandas · NumPy</span>
+            </div>
+            <h3 class="project-title">SEC Filing &amp; Server Log Intelligence</h3>
+            <p class="project-desc">Data pipeline parsing SEC EDGAR server logs and filings. Identifies access patterns, filing trends, and state-wise distributions.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/edgar-weblogs" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">07</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · XGBoost · Scikit-learn</span>
+            </div>
+            <h3 class="project-title">Stock Price Prediction</h3>
+            <p class="project-desc">ML pipeline predicting Tesla stock movement using OHLC data. Logistic Regression, SVM, and XGBoost with ROC evaluation.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/Stock-Price-Predictions" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal magnetic">
+          <div class="project-card-inner">
+            <div class="project-num">08</div>
+            <div class="project-tags-row">
+              <span class="ptag">Python · Seaborn · Pandas</span>
+            </div>
+            <h3 class="project-title">Amazon Top 50 Bestsellers Analysis</h3>
+            <p class="project-desc">EDA on a decade of Amazon bestseller data (2009–2019). Genre trends, author popularity, and pricing correlations visualized.</p>
+            <div class="project-footer">
+              <a href="https://github.com/tianalongjam/amazon-best-sellers-analysis" target="_blank" class="project-link">View ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="section-inner">
+      <div class="section-label">04 — skills</div>
+      <h2 class="section-heading reveal">My toolkit.</h2>
+
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">ML &amp; Data</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">XGBoost</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">HuggingFace</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Big Data</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">Spark</span>
+            <span class="skill-pill">Spark MLlib</span>
+            <span class="skill-pill">HDFS</span>
+            <span class="skill-pill">BigQuery</span>
+            <span class="skill-pill">Cassandra</span>
+            <span class="skill-pill">Kafka</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Infrastructure</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">REST API</span>
+            <span class="skill-pill">gRPC</span>
+            <span class="skill-pill">Protobuf</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Supabase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Relevant Coursework</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">Intro to AI (CS 540)</span>
+            <span class="skill-pill">Big Data Systems (CS 544)</span>
+            <span class="skill-pill">Modern Algebra (Math 541)</span>
+            <span class="skill-pill">Analysis I (Math 521)</span>
+            <span class="skill-pill">Math Methods in DS (Math 535)</span>
+            <span class="skill-pill">Theory of Probability (Math 431)</span>
+            <span class="skill-pill">Introduction to Finance (Finance 300)</span>
+            <span class="skill-pill">Accounting Principles (AcctIS 300)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Extracurriculars -->
+  <section class="section extras-section">
+    <div class="section-inner">
+      <div class="section-label">05 — beyond work</div>
+      <h2 class="section-heading reveal">Outside the terminal.</h2>
+      <div class="extras-grid reveal">
+        <div class="extra-card">
+          <h4>dotData</h4>
+          <p>Data science club at UW–Madison. Competed in MadData hackathon, attended 10+ industry speaker events.</p>
+          <span class="extra-date">Jan 2026 – Present</span>
+        </div>
+        <div class="extra-card">
+          <h4>Wisconsin RangDe</h4>
+          <p>All-girls South Asian-Fusion dance team. Performing Bollywood, Bhangra, Contemporary &amp; Hip-Hop at campus events.</p>
+          <span class="extra-date">Sep 2025 – Present</span>
+        </div>
+        <div class="extra-card">
+          <h4>Wisconsin Emerging Scholars</h4>
+          <p>Co-enrolled in calculus + WES course. Consistently outperformed standard calculus sections.</p>
+          <span class="extra-date">Jan – Dec 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Tiana Longjam</span>
+        <span class="footer-sub">Data Science &amp; Mathematics · UW–Madison · Class of 2027</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:longjam@wisc.edu" target="_blank">Email ↗</a>
+        <a href="https://linkedin.com/in/tiana-longjam" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/tianalongjam" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Tiana Longjam · Built with HTML + CSS</div>
+  </footer>
+
+  <script>
+    /* ── Custom cursor ── */
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursor-follower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.left = mouseX + 'px';
+      cursor.style.top = mouseY + 'px';
+    });
+
+    function animateFollower() {
+      followerX += (mouseX - followerX) * 0.12;
+      followerY += (mouseY - followerY) * 0.12;
+      follower.style.left = followerX + 'px';
+      follower.style.top = followerY + 'px';
+      requestAnimationFrame(animateFollower);
+    }
+    animateFollower();
+
+    document.querySelectorAll('a, button, .project-card, .exp-item').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+        follower.classList.add('follower-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+        follower.classList.remove('follower-hover');
+      });
+    });
+
+    /* ── Parallax hero ── */
+    const heroBgText = document.getElementById('hero-bg-text');
+    const heroLine1 = document.getElementById('hero-line1');
+    const heroLine2 = document.getElementById('hero-line2');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (heroBgText) heroBgText.style.transform = `translateY(${scrollY * 0.4}px)`;
+      if (heroLine1) heroLine1.style.transform = `translateY(${scrollY * 0.15}px)`;
+      if (heroLine2) heroLine2.style.transform = `translateY(${scrollY * 0.25}px)`;
+
+      /* ── Sticky nav ── */
+      const nav = document.getElementById('nav');
+      if (scrollY > 80) nav.classList.add('nav-scrolled');
+      else nav.classList.remove('nav-scrolled');
+    });
+
+    /* ── Scroll reveals ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    /* ── Magnetic effect on cards ── */
+    document.querySelectorAll('.magnetic').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        card.style.transform = `translate(${x * 0.04}px, ${y * 0.04}px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    /* ── Staggered exp items ── */
+    document.querySelectorAll('.exp-item').forEach((item, i) => {
+      item.style.transitionDelay = `${i * 0.08}s`;
+    });
+  </script>
+</body>
+</html>

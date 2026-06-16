@@ -301,7 +301,7 @@ header nav a:hover {
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  /* gap: 1.5rem; */
+  gap: 1.5rem;
   align-items: stretch;
 }
 
@@ -309,7 +309,6 @@ header nav a:hover {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  margin:0.75rem;
   position: relative;
   overflow: hidden;
   border-left: 5px solid #1d4ed8;
@@ -412,135 +411,5 @@ ease;
   font-size: 0.9rem;
 }
 
-.hackathon-tag {
-    display: inline-block;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
 
-    padding: 0.5rem 1rem;
-    
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #8e44ad, #e91e8c);
-    border-radius: 25px;
-    color: white;
-}
 
-/*  */
-#skills {
-  padding: 3rem 2rem;
-}
-
-#skills h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  border-left: 5px solid #3b82f6;
-  padding-left: 10px;
-}
-
-/* Three category rows stacked vertically */
-.skills-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* Each row: label card on left, skill cards on right */
-.skills-row {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 1rem;
-  align-items: center;
-}
-
-/* Category label — styled like .experience-card but compact */
-.skills-row-label {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  border-left: 5px solid #1d4ed8;
-  border-radius: 0.75rem;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.skills-row-label span {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #1d4ed8;
-}
-
-/* Scrollable row of skill cards */
-.skills-row-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-/* Individual skill card — white card like .card but smaller */
-.skill-tile {
-  background: white;
-  border-radius: 0.75rem;
-  padding: 0.9rem 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  border: 1px solid #f0f4ff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  cursor: default;
-  min-width: 100px;
-}
-
-.skill-tile:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.12);
-  border-color: #bfdbfe;
-}
-
-/* Colored monogram / glyph block */
-.skill-tile-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 800;
-  flex-shrink: 0;
-  letter-spacing: -0.02em;
-}
-
-.skill-tile-icon img {
-  width: 100%;
-  height: 100%;
-}
-
-.skill-tile span {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #111827;
-  white-space: nowrap;
-}
-
-/* Icon color themes — blues & greens that match the site palette */
-.ic-blue   { background: #eff6ff; color: #1d4ed8; }
-.ic-sky    { background: #e0f2fe; color: #0369a1; }
-.ic-green  { background: #f0fdf4; color: #15803d; }
-.ic-orange { background: #fff7ed; color: #c2410c; }
-
-@media (max-width: 640px) {
-  .skills-row {
-    grid-template-columns: 1fr;
-  }
-  .skills-row-label {
-    height: auto;
-  }
-}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    #showMoreBtn {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 18px;
+      border: none;
+      background-color: #2563eb;
+      color: white;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #showMoreBtn:hover {
+      background-color: #1e40af;
+    }
+
+    /* Initially hide the extra projects */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>My Projects</h2>
+
+  <div class="projects">
+    <div class="project">Project 1 — Portfolio Website</div>
+    <div class="project">Project 2 — Data Visualization Dashboard</div>
+    <div class="project">Project 3 — Chatbot with GPT API</div>
+
+    <!-- Hidden Projects -->
+    <div class="project hidden">Project 4 — Machine Learning Model</div>
+    <div class="project hidden">Project 5 — Game App in React</div>
+    <div class="project hidden">Project 6 — Library Management System</div>
+  </div>
+
+  <button id="showMoreBtn">Show More</button>
+
+  <script>
+    const showMoreBtn = document.getElementById("showMoreBtn");
+    const hiddenProjects = document.querySelectorAll(".hidden");
+    let expanded = false;
+
+    showMoreBtn.addEventListener("click", () => {
+      expanded = !expanded;
+      hiddenProjects.forEach(p => p.style.display = expanded ? "block" : "none");
+      showMoreBtn.textContent = expanded ? "Show Less" : "Show More";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tiana Longjam — Data Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles3.css"/>
+</head>
+<body>
+
+<div class="cur-dot" id="curDot"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- Header -->
+<header id="hdr">
+  <a href="#top" class="hd-pill"><span class="blob"></span>Tiana&nbsp;Longjam</a>
+  <nav class="hd-nav">
+    <a href="#beliefs">About</a>
+    <a href="#work">Work</a>
+    <a href="mailto:longjam@wisc.edu" class="cta">Connect</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-wrap">
+    <div class="stacked" id="stacked"></div>
+
+    <div class="decor blob1" data-speed="0.18"></div>
+    <div class="decor blob2" data-speed="-0.12"></div>
+    <svg class="decor squig" data-speed="0.22" width="90" height="40" viewBox="0 0 90 40" fill="none">
+      <path d="M3 20c10-18 22 18 32 0s22-18 32 0 18 8 20 4" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <svg class="decor star" data-speed="-0.2" width="52" height="52" viewBox="0 0 52 52" fill="currentColor">
+      <path d="M26 0c2 14 10 22 24 24-14 2-22 10-24 24-2-14-10-22-24-24C16 22 24 14 26 0Z"/>
+    </svg>
+
+    <div class="clock anim d1"><span class="ping"></span><span id="clock">Madison · CT</span></div>
+    <p class="role anim d1">Data Scientist &amp; Mathematician</p>
+    <h1 class="anim d2">Data should
+      <span class="em">feel human<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M4 14c70-12 220-12 292-4"/></svg></span>
+    </h1>
+    <p class="lede anim d3">I'm Tiana — I build ML systems where the math is rigorous and the impact is real, from neural PDE solvers to AI tools for speech rehab and mental health.</p>
+  </div>
+  <div class="scrollcue anim d4"><span>scroll</span><span class="bar"></span></div>
+</section>
+
+<!-- Beliefs -->
+<section class="beliefs" id="beliefs">
+  <div class="wrap">
+    <p class="eyebrow reveal">A few things I believe</p>
+    <h2 class="reveal">Three principles behind everything I build.</h2>
+    <div class="belief-grid">
+
+      <div class="belief reveal">
+        <div class="panel p-cobalt"><span class="num">01</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg>
+        </div>
+        <h3>Rigor is non-negotiable.</h3>
+        <p>The math and the engineering both have to hold up. A 50× error improvement only counts if the proof and the pipeline agree.</p>
+      </div>
+
+      <div class="belief reveal">
+        <div class="panel p-coral"><span class="num">02</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </div>
+        <h3>Build for real people.</h3>
+        <p>Every project should help someone. Speech rehab, fair lending, mental-health access — the work means more when it reaches a person.</p>
+      </div>
+
+      <div class="belief reveal">
+        <div class="panel p-leaf"><span class="num">03</span>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Stay curious, ship often.</h3>
+        <p>Two hackathons this year, a research paper deep-dive, a new framework most weeks. Curiosity compounds when you keep shipping.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Marquee (signature) -->
+<section class="marquee-sec">
+  <div class="marquee" id="marquee">
+    <span class="chip"><span class="dot d-cobalt">∂u</span>Neural PDE solvers</span>
+    <span class="chip"><span class="dot d-coral">∑</span>Math major</span>
+    <span class="chip"><span class="dot d-leaf">▶</span>Bhangra @ RangDe</span>
+    <span class="chip"><span class="dot d-grape">SAIL</span>AI Lab 2026</span>
+    <span class="chip"><span class="dot d-sun">☕</span>Filter-coffee coder</span>
+    <span class="chip"><span class="dot d-ink">D</span>Deloitte alum</span>
+    <span class="chip"><span class="dot d-cobalt">WI</span>Madison-based</span>
+    <span class="chip"><span class="dot d-coral">🦉</span>Night-owl builder</span>
+    <span class="chip"><span class="dot d-leaf">⚖</span>Reducing inequality</span>
+    <span class="chip"><span class="dot d-grape">Py</span>PyTorch &amp; pandas</span>
+    <!-- duplicate for seamless loop -->
+    <span class="chip"><span class="dot d-cobalt">∂u</span>Neural PDE solvers</span>
+    <span class="chip"><span class="dot d-coral">∑</span>Math major</span>
+    <span class="chip"><span class="dot d-leaf">▶</span>Bhangra @ RangDe</span>
+    <span class="chip"><span class="dot d-grape">SAIL</span>AI Lab 2026</span>
+    <span class="chip"><span class="dot d-sun">☕</span>Filter-coffee coder</span>
+    <span class="chip"><span class="dot d-ink">D</span>Deloitte alum</span>
+    <span class="chip"><span class="dot d-cobalt">WI</span>Madison-based</span>
+    <span class="chip"><span class="dot d-coral">🦉</span>Night-owl builder</span>
+    <span class="chip"><span class="dot d-leaf">⚖</span>Reducing inequality</span>
+    <span class="chip"><span class="dot d-grape">Py</span>PyTorch &amp; pandas</span>
+  </div>
+</section>
+
+<!-- Statement -->
+<section class="statement">
+  <div class="wrap">
+    <p class="reveal">Everything I build, I build <span class="em">with care.</span></p>
+  </div>
+</section>
+
+<!-- Work -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="work-head">
+      <div>
+        <p class="eyebrow reveal">Selected work</p>
+        <h2 class="reveal">Things I've made.</h2>
+      </div>
+    </div>
+    <div class="work-grid">
+
+      <a class="proj reveal" href="https://github.com/tianalongjam/PrivacyLens--CheeseHacks-Hackathon/tree/main" target="_blank">
+        <div class="thumb"><span class="badge">CheeseHacks 2026</span><img src="images/priv.jpeg" alt="PrivacyLens" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><h3>PrivacyLens</h3>
+            <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div></div>
+          <p>Scan 30+ apps from one phone screenshot and get plain-English privacy breakdowns in under 30s. Dual Flask/FastAPI backend, 90%+ icon detection.</p>
+          <div class="tags"><span>React</span><span>FastAPI</span><span>Flask</span><span>Gemini</span></div>
+        </div>
+      </a>
+
+      <a class="proj reveal" href="https://github.com/tianalongjam/Reflect-MadHacks" target="_blank">
+        <div class="thumb"><span class="badge">MadData 2026</span><img src="images/Healing.png" alt="Reflect" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><h3>Reflect</h3>
+            <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div></div>
+          <p>Mental-health app with facility finder, mood tracker, AI journal and streaks. Google Maps across 8,000+ SAMHSA facilities; 8,319-row Postgres search.</p>
+          <div class="tags"><span>React</span><span>Supabase</span><span>Express</span><span>Maps API</span></div>
+        </div>
+      </a>
+
+      <a class="proj reveal" href="https://github.com/tianalongjam/Wisconsin-Census-Population-Predictor" target="_blank">
+        <div class="thumb"><span class="badge">Geospatial ML</span><img src="images/wisconsin.jpeg" alt="Census Predictor" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><h3>Census Population Predictor</h3>
+            <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div></div>
+          <p>Fused geospatial, raster and relational data into one modeling pipeline predicting Wisconsin county- and tract-level population.</p>
+          <div class="tags"><span>GeoPandas</span><span>SQLite</span><span>Scikit-learn</span></div>
+        </div>
+      </a>
+
+      <a class="proj reveal" href="https://github.com/tianalongjam/loans_analysis" target="_blank">
+        <div class="thumb"><span class="badge">Fair lending</span><img src="images/p1.jpeg" alt="Loan Insights" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><h3>Fair Lending Analysis</h3>
+            <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div></div>
+          <p>Custom OOP framework + BST modeling 2020 Wisconsin HMDA data, surfacing fairness patterns in interest rates across banks.</p>
+          <div class="tags"><span>Python</span><span>OOP</span><span>BST</span><span>Matplotlib</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Connect -->
+<section class="connect" id="connect">
+  <div class="wrap">
+    <div class="connect-card">
+      <div class="c-blob"></div>
+      <p class="eyebrow">What's next</p>
+      <h2>Looking for a 2026 internship where the work actually matters.</h2>
+      <div class="look">
+        <span>✦ Impactful problems</span>
+        <span>✦ Teams who sweat the details</span>
+        <span>✦ Real ML, not buzzwords</span>
+      </div>
+      <a class="chat" href="mailto:longjam@wisc.edu">
+        Let's chat
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span class="name">Tiana Longjam</span>
+      <div class="links">
+        <a href="mailto:longjam@wisc.edu">Email</a>
+        <a href="https://linkedin.com/in/tiana-longjam" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tianalongjam" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Stacked role letters */
+(function(){
+  const word='DATA SCIENTIST', host=document.getElementById('stacked');
+  [...word].forEach((ch,i)=>{
+    if(ch===' '){const g=document.createElement('div');g.className='gap';host.appendChild(g);return;}
+    const s=document.createElement('span');s.textContent=ch;s.style.animationDelay=(0.5+i*0.04)+'s';host.appendChild(s);
+  });
+})();
+
+/* Live Central-time clock */
+function tick(){
+  const t=new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',timeZone:'America/Chicago',hour12:false});
+  document.getElementById('clock').textContent='Madison · '+t+' CT';
+}
+tick();setInterval(tick,30000);
+
+/* Custom cursor */
+const dot=document.getElementById('curDot'),ring=document.getElementById('curRing');
+let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform=`translate(${mx}px,${my}px)`;},{passive:true});
+(function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop);})();
+document.querySelectorAll('a,.belief,.proj,.chip').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('big'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('big'));
+});
+
+/* Header shrink + decor parallax */
+const hdr=document.getElementById('hdr'),decor=[...document.querySelectorAll('.decor')];
+addEventListener('scroll',()=>{
+  const y=scrollY;
+  hdr.classList.toggle('shrink',y>30);
+  decor.forEach(d=>{const s=parseFloat(d.dataset.speed||0);d.style.transform=`translateY(${y*s}px)`;});
+},{passive:true});
+
+/* Reveal on scroll */
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Magnetic on key buttons */
+document.querySelectorAll('.chat,.hd-nav .cta').forEach(el=>{
+  el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();
+    el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.25}px)`;});
+  el.addEventListener('mouseleave',()=>el.style.transform='');
+});
+</script>
+</body>
+</html>
