@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiana Longjam | Portfolio</title>
+  <link rel="stylesheet" href="styles7.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Tiana Longjam</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="mailto:longjam@wisc.edu" class="nav-cta">Connect</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="images/linkedinpfp.png" alt="Tiana Longjam" class="image">
+    <h2>Tiana Longjam</h2>
+    <p id="major">Data Science &amp; Mathematics</p>
+    <p>University of Wisconsin–Madison &nbsp;·&nbsp; Class of December 2026</p>
+    <div class="links">
+      <a href="mailto:longjam@wisc.edu"><img src="images/mail.png" alt="Email" width="28" height="28"></a>
+      <a href="https://linkedin.com/in/tiana-longjam" target="_blank"><img src="images/7668AEEB-E1D0-45C4-9C7B-16613DC78C09.PNG" alt="LinkedIn" width="28" height="28"></a>
+      <a href="https://github.com/tianalongjam" target="_blank"><img src="images/githubairdrop.PNG" alt="GitHub" width="28" height="28"></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h3>About</h3>
+    <div class="card" style="padding:1.5rem;border-left:none">
+      <p style="font-size:.97rem;color:#475569;line-height:1.8;margin-bottom:.9rem">
+        I'm Tiana, a Data Science and Mathematics student at UW–Madison with a Business minor in Finance &amp; Accounting. I work at the intersection of machine learning, mathematics, and real-world impact — from neural PDE solvers to full-stack AI applications.
+      </p>
+      <p style="font-size:.97rem;color:#475569;line-height:1.8">
+        I care about using data to reduce inequality — whether that's surfacing bias in lending, making speech therapy accessible, or improving mental health access.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education">
+    <div class="edu-wrap">
+      <div class="edu-layout">
+        <div class="edu-left">
+          <h2>University of<br>Wisconsin–Madison</h2>
+          <div class="edu-meta">
+            <div class="edu-badge"><span class="badge-dot d-cobalt"></span><span>B.S. Data Science and Mathematics</span></div>
+            <div class="edu-badge"><span class="badge-dot d-grape"></span><span>Minor in Business (Finance &amp; Accounting)</span></div>
+            <div class="edu-badge"><span class="badge-dot d-leaf"></span><span>Senior · Graduating Dec 2026</span></div>
+            <div class="edu-badge"><span class="badge-dot d-coral"></span><span>GPA 3.63 · Dean's List</span></div>
+          </div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-card">
+            <span class="edu-year">Sept 2023 — Dec 2026</span>
+            <div class="edu-school-mark">UW</div>
+            <p class="edu-card-label">Madison, WI</p>
+          </div>
+          <!-- <div class="edu-stats">
+            <div class="edu-stat"><span class="stat-num">3.5</span><span class="stat-label">Years</span></div>
+            <div class="edu-stat"><span class="stat-num">2</span><span class="stat-label">Hackathons</span></div>
+            <div class="edu-stat"><span class="stat-num">3+</span><span class="stat-label">Dean's List</span></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container">
+    <h3>Experience</h3>
+
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="exp-header">
+          <h4>AI Research Intern – SAIL</h4>
+          <span class="date">May 2026 – Present</span>
+        </div>
+        <ul>
+          <li>Enabled fully personalised speech therapy for each user by designing a Neo4j Knowledge Graph that tracks session history, pronunciation weak spots, and improvement over time, forming the decision-making backbone that determines which exercises the AI assigns next</li>
+          <li>Closed the feedback loop between speech analysis and exercise delivery by engineering a Python data pipeline that feeds Whisper transcription outputs and CNN pronunciation scores into a graph database, allowing a Contextual Bandit RL agent to automatically reprioritize exercises each session based on where the user is struggling most</li>
+          <li>Delivered a full-stack AI speech companion by collaborating across a 4-person team, owning the Knowledge Graph, DTW progress scoring, and Exercise Bank while integrating with parallel Whisper ASR, CNN audio analysis, and RAG-grounded LLM layers built by teammates</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <h4>Data Science Intern – Infinite Sum Modelling</h4>
+          <span class="date">Jun 2026 – Present</span>
+        </div>
+        <ul>
+          <li>Building and developing statistical models using data science and economics tools to support policy and trade analysis</li>
+          <li>Currently being assigned a project to work on</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="exp-header">
+          <h4>Undergraduate Research Assistant – UW Madison</h4>
+          <span class="date">Jan 2026 – Present</span>
+        </div>
+        <ul>
+          <li>Outperformed classical semi-Lagrangian methods by up to 50× in L∞ error by developing a meshless, GPU-parallelizable neural PDE solver in PyTorch that eliminated exponential growth in degrees of freedom across 8-dimensional problems</li>
+          <li>Reduced computational costs by 10× and L² error by 10× by integrating natural gradient preconditioning and adaptive sampling into a time-sequential neural solver that removes time step stability constraints</li>
+          <li>Validated a novel neural semi-Lagrangian framework through rigorous four-component error analysis and extension to nonlinear Vlasov-Poisson equations, achieving under 1% relative L² error using a second-order predictor-corrector scheme</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <h4>Community Assistant – University Housing</h4>
+          <span class="date">Nov 2024 – Jun 2026</span>
+        </div>
+        <ul>
+          <li>Utilize software tools including Microsoft Office Suite (Outlook, Word, Excel), SharePoint, and databases to efficiently complete administrative and operational tasks</li>
+          <li>Leverage spreadsheets and web-based systems to track, organize, and manage information accurately</li>
+          <li>Demonstrate core values of care, integrity, creativity, respect, optimism, stewardship, and excellence in all interactions</li>
+          <li>Maintain desk security and confidentiality, and respond promptly to emergencies using StarRez, SharePoint, and EMS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="exp-header">
+          <h4>Data Science Intern – Deloitte</h4>
+          <span class="date">Jun–Aug 2024</span>
+        </div>
+        <ul>
+          <li>Engineered and consolidated datasets by analyzing confidential client BIG data from over 5 financial years, for a Loyalty Case Study analysis</li>
+          <li>Contributed to the development of a new retail website by optimizing front-end components with HTML, enhancing the user interface and overall user experience</li>
+          <li>Conducted extensive data analysis using Python and Pandas library to generate financial conclusions, significantly deepening my analytical skills and understanding of financial data</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="hack">Hackathons</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="fs">Full Stack</button>
+      <button class="filter-btn" data-filter="da">Data Analysis</button>
+      <button class="filter-btn" data-filter="de">Data Engineering</button>
+      <button class="filter-btn" data-filter="nlp">NLP / AI</button>
+      <button class="filter-btn" data-filter="geo">Geospatial</button>
+      <button class="filter-btn" data-filter="fin">Finance</button>
+    </div>
+
+    <div class="grid" id="projects-grid">
+
+      <div class="card" data-cats="fs nlp ml">
+        <div class="card-image"><img src="images/speakeasy.jpeg" alt="SpeakEasy"></div>
+        <a href="#" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>SpeakEasy</h3>
+        <span class="hackathon-tag">Full Stack</span><span class="hackathon-tag">NLP / AI</span><span class="hackathon-tag">Machine Learning</span>
+        <div class="rounded_desc"><p>Neo4j</p><p>Python</p><p>Whisper</p><p>CNN</p><p>Twilio</p><p>RL</p></div>
+        <ul class="project-points">
+          <li>Designed and implemented a Neo4j Knowledge Graph schema modeling user session history, phoneme-level pronunciation scores, and weak area detection to serve as the personalization backbone for an adaptive speech therapy application</li>
+          <li>Engineered a Python data pipeline that writes Whisper transcription outputs and CNN pronunciation scores to a graph database, enabling a Contextual Bandit RL agent to dynamically adapt exercise selection across 500+ users</li>
+          <li>Collaborated with a 4-person team to deliver a WhatsApp-native AI speech companion integrating Twilio, OpenAI Whisper, Mel Spectrogram + CNN audio analysis, RAG-grounded LLM feedback, and a Neo4j-backed personalization engine</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de geo">
+        <div class="card-image"><img src="images/cloudbased.jpeg" alt="Cloud School Pipeline"></div>
+        <a href="https://github.com/tianalongjam/Cloud-Based-Geospatial-School-Analytics-Pipeline-" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Cloud-Based Geospatial School Analytics Pipeline</h3>
+        <span class="hackathon-tag">Data Engineering</span><span class="hackathon-tag">Geospatial</span>
+        <div class="rounded_desc"><p>GCP</p><p>BigQuery</p><p>Dataform</p><p>GCS</p><p>SQL</p></div>
+        <ul class="project-points">
+          <li>Generated county-level education insights from statewide 2,000+ school data by writing BigQuery geospatial queries to analyze public school distributions and identify nearest-school relationships across 72 Wisconsin counties</li>
+          <li>Architected scalable cloud analytics across 4 Google Cloud services by building an end-to-end pipeline with GCS, Dataform, BigQuery, and GCP VMs to process and query Wisconsin school datasets</li>
+          <li>Automated multi-stage ETL workflows and reduced manual data integration effort by orchestrating 3 Dataform SQL pipelines to transform raw Parquet data into geospatial BigQuery tables with county-level joins</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de ml">
+        <div class="card-image"><img src="images/competitive.jpeg" alt="Competitive Programming Analytics"></div>
+        <a href="https://github.com/tianalongjam/Competitive-Programming-Analytics" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Competitive Programming Analytics</h3>
+        <span class="hackathon-tag">Data Engineering</span><span class="hackathon-tag">Machine Learning</span>
+        <div class="rounded_desc"><p>Spark</p><p>Hive</p><p>PySpark MLlib</p><p>Gemini API</p></div>
+        <ul class="project-points">
+          <li>Reduced query latency by 85% when engineering distributed analytics pipeline using Apache Spark and Hive to process 8,500+ programming problems and 170,000+ solutions, implementing bucketed tables to eliminate shuffle operations</li>
+          <li>Automated schema-aware prompt construction for deterministic query generation by developing natural language SQL interface with Gemini API to convert English queries into executable Spark SQL</li>
+          <li>Built predictive ML pipeline to estimate missing difficulty scores using PySpark MLlib and DecisionTreeRegressor and evaluated 10 tree depths and optimizing model performance through R² score analysis</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="fs nlp hack">
+        <div class="card-image"><img src="images/priv.jpeg" alt="PrivacyLens"></div>
+        <a href="https://github.com/tianalongjam/PrivacyLens--CheeseHacks-Hackathon/tree/main" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>PrivacyLens</h3>
+        <span class="hackathon-tag">Hackathon</span><span class="hackathon-tag">Full Stack</span><span class="hackathon-tag">NLP / AI</span>
+        <div class="rounded_desc"><p>React</p><p>FastAPI</p><p>Flask</p><p>Gemini</p></div>
+        <ul class="project-points">
+          <li>Architected a full-stack privacy audit web application using React, FastAPI, Flask, and Google Gemini 2.5 Flash, enabling users to scan 30+ apps from a single phone screenshot and receive plain-English privacy breakdowns in under 30 seconds</li>
+          <li>Engineered a dual-backend system separating AI processing (Flask) from data and scoring logic (FastAPI), integrating Google Gemini Vision API to automatically detect and audit app icons from uploaded phone screenshots with 90%+ detection accuracy across 37 apps</li>
+          <li>Developed a risk-weighted privacy scoring algorithm using real permission and tracker data sourced from the Exodus Privacy database, normalizing scores across 50+ apps to surface actionable insights for non-technical users at CheeseHacks 2026</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="nlp da">
+        <div class="card-image"><img src="images/United , an art print by Abbey Lossing.jpeg" alt="Bias Checker"></div>
+        <a href="https://github.com/tianalongjam/search-engine-with-exa-ai" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Bias &amp; Source Diversity Checker</h3>
+        <span class="hackathon-tag">NLP / AI</span><span class="hackathon-tag">Data Analysis</span>
+        <div class="rounded_desc"><p>Python</p><p>Exa AI API</p><p>HuggingFace</p></div>
+        <ul class="project-points">
+          <li>Improved transparency in AI search results by developing a Python-based analytics tool that analyzed 50+ Exa API search results per query to detect dominant domains, measure source diversity, and identify potential bias patterns</li>
+          <li>Quantified search-result bias and information diversity by implementing statistical metrics including Herfindahl–Hirschman Index (HHI), Shannon entropy, and Gini coefficient to evaluate concentration and representation across sources</li>
+          <li>Identified sentiment skew and accelerated bias interpretation by integrating HuggingFace Transformer models for NLP sentiment analysis and building visualizations (heatmaps, bar charts, pie charts) to surface domain-level sentiment trends</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image"><img src="images/fault.jpeg" alt="HDFS Pipeline"></div>
+        <h3>Fault-Tolerant SQL-HDFS Data Pipeline</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc"><p>Python</p><p>Docker</p><p>HDFS</p><p>SQL</p><p>gRPC</p><p>PyArrow</p></div>
+        <ul class="project-points">
+          <li>Improved query performance and fault tolerance by building a Python gRPC service that cached HDFS Parquet partitions and automatically recovered corrupted files after DataNode failures</li>
+          <li>Reduced data processing overhead for 426K+ mortgage records by implementing a SQL → HDFS pipeline with MySQL, PyArrow, and partition-based Parquet optimization</li>
+          <li>Enabled scalable distributed analytics by deploying a Docker-based ecosystem with MySQL, HDFS, WebHDFS APIs, and gRPC for replicated storage and block-level monitoring</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image"><img src="images/address.jpeg" alt="Address Lookup"></div>
+        <h3>Distributed Address Lookup System</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc"><p>gRPC</p><p>Docker</p><p>LRU Cache</p><p>Protobuf</p></div>
+        <ul class="project-points">
+          <li>Improved system reliability and maintained service availability during failures by architecting a fault-tolerant microservices system with 5 Docker containers, implementing gRPC communication, round-robin load balancing across 2 backend replicas, and automatic failover with exponential retry logic (5 attempts, 100ms intervals)</li>
+          <li>Reduced backend load and enabled degraded operation during complete failures by designing a 3-node HTTP caching layer with LRU eviction policies, achieving cache hits for repeated zipcode queries</li>
+          <li>Enabled scalable processing of 50,000+ address records by developing a containerized data service using Protocol Buffers serialization and an automated Docker build pipeline for compiling .proto files and loading compressed datasets</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image"><img src="images/weather.jpeg" alt="Weather System"></div>
+        <h3>Distributed Weather Data System</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc"><p>Cassandra</p><p>gRPC</p><p>Spark</p><p>Docker</p></div>
+        <ul class="project-points">
+          <li>Achieved 99% write availability during node failures while maintaining read consistency by architecting a fault-tolerant gRPC server with a 3-node Cassandra cluster, implementing tunable consistency levels (W=1, R=2) to balance availability and reliability across 200+ Wisconsin weather stations</li>
+          <li>Enabled sub-second querying of time-series weather statistics by designing an automated PySpark pipeline to parse and load 10,000+ temperature records into a partitioned Cassandra schema with compound keys</li>
+          <li>Prevented stale reads and ensured resilient system performance during failures by implementing graceful degradation strategies with dual read profiles, quorum-based validation, and prepared statements for consistent fallback behavior</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="fs hack">
+        <div class="card-image"><img src="images/Healing.png" alt="Reflect"></div>
+        <a href="https://github.com/tianalongjam/Reflect-MadHacks" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Reflect</h3>
+        <span class="hackathon-tag">Hackathon</span><span class="hackathon-tag">Full Stack</span>
+        <div class="rounded_desc"><p>React</p><p>Vite</p><p>Express</p><p>Supabase</p><p>Google Maps API</p></div>
+        <ul class="project-points">
+          <li>Engineered a full-stack mental health web application at MadData 2026 by building 4 core features including a facility finder, mood tracker, AI journal, and streak tracker using React, Vite, and Supabase</li>
+          <li>Integrated Google Maps Distance Matrix and Geocoding APIs into a custom Express backend route to calculate real-time driving distance and straight-line distance across 8,000+ SAMHSA-verified mental health facilities, enabling results to sort automatically by proximity</li>
+          <li>Designed and populated a PostgreSQL database on Supabase by parsing 60+ service codes from the SAMHSA National Directory of Mental Health Treatment Facilities into queryable boolean columns, supporting flexible multi-filter search across 8,319 facilities</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="ml geo">
+        <div class="card-image"><img src="images/wisconsin.jpeg" alt="Census Predictor"></div>
+        <a href="https://github.com/tianalongjam/Wisconsin-Census-Population-Predictor" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Wisconsin Census Population Predictor</h3>
+        <span class="hackathon-tag">Machine Learning</span><span class="hackathon-tag">Geospatial</span>
+        <div class="rounded_desc"><p>Python</p><p>GeoPandas</p><p>SQLite</p><p>Scikit-learn</p></div>
+        <ul class="project-points">
+          <li>Engineered and integrated multi-source geospatial, raster, and relational data (GeoJSON, shapefiles, SQLite, and land use raster) into unified DataFrames for predictive modeling</li>
+          <li>Developed and evaluated multiple regression models (LinearRegression, Pipelines with StandardScaler) to predict Wisconsin county and tract-level population, achieving strong explained variance and model interpretability</li>
+          <li>Applied feature engineering and visualization using GeoPandas, Matplotlib, and rasterio to map spatial patterns, analyze land-use impact, and assess model performance across regions</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="da fin">
+        <div class="card-image"><img src="images/p1.jpeg" alt="Loan Insights"></div>
+        <a href="https://github.com/tianalongjam/loans_analysis" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Loan Insights &amp; Fair Lending Analysis</h3>
+        <span class="hackathon-tag">Data Analysis</span><span class="hackathon-tag">Finance</span>
+        <div class="rounded_desc"><p>Python</p><p>OOP</p><p>BST</p><p>Matplotlib</p></div>
+        <ul class="project-points">
+          <li>Engineered a custom object-oriented framework (Applicant, Loan, Bank classes) to model and analyze 2020 Wisconsin HMDA loan data, enabling structured data handling and extensibility</li>
+          <li>Implemented a Binary Search Tree (BST) to optimize loan lookups and benchmark performance against traditional iteration, achieving significant efficiency gains</li>
+          <li>Conducted exploratory and statistical analyses on interest rates, applicant demographics, and lending trends, uncovering insights into potential bias and fairness patterns across banks</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="da">
+        <div class="card-image"><img src="images/Automated document workflow systems for efficient management and organization of digital files _ Premium AI-generated image.jpeg" alt="SEC Filing"></div>
+        <a href="https://github.com/tianalongjam/edgar-weblogs" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>SEC Filing &amp; Server Log Intelligence</h3>
+        <span class="hackathon-tag">Data Analysis</span>
+        <div class="rounded_desc"><p>Python</p><p>Pandas</p><p>NumPy</p><p>Visualization</p></div>
+        <ul class="project-points">
+          <li>Developed a Python data pipeline to parse and analyze SEC EDGAR server logs and company filings, integrating real-world datasets to extract patterns in user access, filing activity, and organizational behavior</li>
+          <li>Leveraged data analysis libraries (Pandas, NumPy, Matplotlib) to clean, aggregate, and visualize large-scale logs, identifying top IP sources, time-based trends, and state-wise filing distributions</li>
+          <li>Demonstrated advanced data wrangling and exploratory data analysis (EDA) skills by merging heterogeneous datasets, building insight-driven visualizations, and optimizing parsing efficiency for high-volume text data</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="da">
+        <div class="card-image"><img src="images/booksp2.jpeg" alt="Amazon Bestsellers"></div>
+        <a href="https://github.com/tianalongjam/amazon-best-sellers-analysis" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Amazon Top 50 Bestsellers</h3>
+        <span class="hackathon-tag">Data Analysis</span>
+        <div class="rounded_desc"><p>Python</p><p>Pandas</p><p>Seaborn</p><p>Matplotlib</p></div>
+        <ul class="project-points">
+          <li>Performed exploratory data analysis (EDA) on a decade of Amazon bestseller data (2009–2019) to uncover sales trends, genre dominance, and rating distributions using Pandas and NumPy</li>
+          <li>Visualized key insights such as yearly category performance, author popularity, and pricing correlations through Seaborn and Matplotlib</li>
+          <li>Applied data cleaning, feature engineering, and statistical analysis techniques to identify patterns influencing book popularity and consumer behavior over time</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="ml fin">
+        <div class="card-image"><img src="images/Interest Rate Cuts Ahead_ What It Means for You (1).jpeg" alt="Stock Prediction"></div>
+        <a href="https://github.com/tianalongjam/Stock-Price-Predictions" target="_blank" class="ghlink"><img src="images/githubairdrop.PNG" alt="GitHub"></a>
+        <h3>Stock Price Prediction</h3>
+        <span class="hackathon-tag">Machine Learning</span><span class="hackathon-tag">Finance</span>
+        <div class="rounded_desc"><p>Python</p><p>Scikit-learn</p><p>XGBoost</p><p>Matplotlib</p></div>
+        <ul class="project-points">
+          <li>Developed a machine learning pipeline to predict Tesla stock price movement using historical OHLC data; implemented feature engineering, classification models (Logistic Regression, SVM, XGBoost), and performance evaluation with accuracy and ROC metrics</li>
+          <li>Applied financial data analysis techniques by computing derived features (price spreads, volatility, quarter-end effects) to enhance model interpretability and trading relevance</li>
+          <li>Conducted exploratory and statistical analyses on interest rates, applicant demographics, and lending trends, uncovering insights into potential bias and fairness patterns across banks</li>
+        </ul>
+      </div>
+
+    </div>
+    <button id="proj-show-more" class="show-more-btn" style="display:none;">Show More</button>
+  </section>
+
+  <!-- Extracurriculars -->
+  <section id="extracurriculars" class="container">
+    <h3>Extracurriculars</h3>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="exp-header"><h4>Women in CS – Events Lead</h4><span class="date">2023 – Present</span></div>
+        <ul>
+          <li>Run workshops, career panels, and networking nights for 200+ members</li>
+          <li>Organised the largest industry mixer to date: 18 companies, 300 attendees</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header"><h4>MadData – Hackathon Organiser</h4><span class="date">2024 – Present</span></div>
+        <ul>
+          <li>Core organising team for UW's annual data science hackathon</li>
+          <li>Handled sponsor relations and designed the judging rubric across 60+ team submissions</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header"><h4>Wisconsin RangDe</h4><span class="date">Sep 2025 – Present</span></div>
+        <ul>
+          <li>South Asian-fusion dance team combining Bollywood, Bhangra, Contemporary, and Hip-Hop</li>
+          <li>Perform at university and community events throughout the year</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header"><h4>ML Reading Group</h4><span class="date">2023 – Present</span></div>
+        <ul>
+          <li>Weekly paper discussions on deep learning, diffusion models, and AI safety</li>
+          <li>Led three sessions including a deep-dive into FlowMatching and its PDE interpretations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-categories">
+      <div class="skills-row">
+        <div class="skills-row-label"><span>Languages</span></div>
+        <div class="skills-row-items">
+          <div class="skill-tile"><div class="skill-tile-icon ic-blue"><img src="images/python transparent.png"></div><span>Python</span></div>
+          <div class="skill-tile"><div class="skill-tile-icon ic-sky"><img src="images/r logo trna.png"></div><span>R</span></div>
+          <div class="skill-tile"><div class="skill-tile-icon ic-blue"><img src="images/sql tran.png"></div><span>SQL</span></div>
+          <div class="skill-tile"><div class="skill-tile-icon ic-sky"><img src="images/html logo trans.png"></div><span>HTML</span></div>
+          <div class="skill-tile"><div class="skill-tile-icon ic-blue"><img src="images/Remove background project.png"></div><span>CSS</span></div>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-row-label"><span>ML &amp; AI</span></div>
+        <div class="skills-row-items">
+          <div class="skill-tile"><span>PyTorch</span></div>
+          <div class="skill-tile"><span>Scikit-learn</span></div>
+          <div class="skill-tile"><span>PySpark MLlib</span></div>
+          <div class="skill-tile"><span>HuggingFace</span></div>
+          <div class="skill-tile"><span>TensorFlow</span></div>
+          <div class="skill-tile"><span>NLP</span></div>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-row-label"><span>Big Data</span></div>
+        <div class="skills-row-items">
+          <div class="skill-tile"><span>Spark</span></div>
+          <div class="skill-tile"><span>Hive</span></div>
+          <div class="skill-tile"><span>HDFS</span></div>
+          <div class="skill-tile"><span>BigQuery</span></div>
+          <div class="skill-tile"><span>Cassandra</span></div>
+          <div class="skill-tile"><span>Kafka</span></div>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-row-label"><span>Infra &amp; APIs</span></div>
+        <div class="skills-row-items">
+          <div class="skill-tile"><div class="skill-tile-icon ic-sky">🐳</div><span>Docker</span></div>
+          <div class="skill-tile"><span>gRPC</span></div>
+          <div class="skill-tile"><span>REST API</span></div>
+          <div class="skill-tile"><span>Protobuf</span></div>
+          <div class="skill-tile"><span>Neo4j</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework -->
+  <section id="coursework" class="section" style="border-top:1px solid #e2e8f0">
+    <h2>Relevant Coursework</h2>
+    <div class="grid">
+      <div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Introduction to Artificial Intelligence</h3>
+        <span class="coursecode">Comp Sci 540</span><span class="hackathon-tag">Data Science</span>
+        <div class="rounded_desc"><p>Machine Learning</p><p>Probabilistic reasoning</p><p>NLP</p><p>Computer Vision</p></div>
+      </div>
+      <div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Modern Algebra</h3>
+        <span class="coursecode">MATH 541</span><span class="hackathon-tag">Mathematics</span>
+        <div class="rounded_desc"><p>Groups</p><p>Rings</p><p>Homomorphisms</p><p>Abstract Vector Spaces</p></div>
+      </div>
+      <div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Introduction to Finance</h3>
+        <span class="coursecode">Finance 300</span><span class="hackathon-tag">Business Minor</span>
+        <div class="rounded_desc"><p>Capital Budgeting</p><p>Asset Valuation</p><p>Financial Markets</p><p>Options</p></div>
+      </div>
+    </div>
+
+    <div style="margin-top:1rem"><button id="showMoreBtn">Show More</button></div>
+
+    <div class="grid" style="margin-top:1rem">
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Big Data Systems</h3>
+        <span class="coursecode">Comp Sci 544</span><span class="hackathon-tag">Data Science</span>
+        <div class="rounded_desc"><p>Spark</p><p>HDFS</p><p>Streaming</p><p>ML at Scale</p></div>
+      </div></div>
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Mathematical Methods in Data Science</h3>
+        <span class="coursecode">MATH 535</span><span class="hackathon-tag">Mathematics</span>
+        <div class="rounded_desc"><p>Matrix Factorization</p><p>Optimization</p><p>Markov Chains</p></div>
+      </div></div>
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Analysis I</h3>
+        <span class="coursecode">MATH 521</span><span class="hackathon-tag">Mathematics</span>
+        <div class="rounded_desc"><p>Real Numbers</p><p>Metric Spaces</p><p>Continuity</p></div>
+      </div></div>
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Theory of Probability</h3>
+        <span class="coursecode">MATH 431</span><span class="hackathon-tag">Mathematics</span>
+        <div class="rounded_desc"><p>Random Variables</p><p>Distributions</p><p>Law of Large Numbers</p></div>
+      </div></div>
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Data Science Modeling II</h3>
+        <span class="coursecode">STAT 340</span><span class="hackathon-tag">Data Science</span>
+        <div class="rounded_desc"><p>R</p><p>Monte Carlo</p><p>Logistic Regression</p><p>Bootstrap</p></div>
+      </div></div>
+      <div class="project hidden"><div class="card" style="padding:1.2rem">
+        <h3 style="padding:0;margin:0 0 .5rem">Accounting Principles</h3>
+        <span class="coursecode">Acct I S 300</span><span class="hackathon-tag">Business Minor</span>
+        <div class="rounded_desc"><p>Financial Statements</p><p>Cost Analysis</p><p>Planning &amp; Control</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© 2026 Tiana Longjam · Built with HTML &amp; CSS</span>
+    <div class="foot-links">
+      <a href="mailto:longjam@wisc.edu">Email</a>
+      <a href="https://linkedin.com/in/tiana-longjam" target="_blank">LinkedIn</a>
+      <a href="https://github.com/tianalongjam" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Coursework show more ── */
+    const showMoreBtn = document.getElementById("showMoreBtn");
+    const hiddenCourses = document.querySelectorAll(".project.hidden");
+    let coursesExpanded = false;
+    showMoreBtn.addEventListener("click", () => {
+      coursesExpanded = !coursesExpanded;
+      hiddenCourses.forEach(p => p.style.display = coursesExpanded ? "block" : "none");
+      showMoreBtn.textContent = coursesExpanded ? "Show Less" : "Show More";
+    });
+
+    /* ── Projects filter + show more ── */
+    const LIMIT = 6;
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = [...document.querySelectorAll('#projects-grid .card')];
+    const projShowMore = document.getElementById('proj-show-more');
+    let projExpanded = false;
+
+    function applyFilter() {
+      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+      const isAll = activeFilter === 'all';
+      const matching = projectCards.filter(card => {
+        const cats = card.dataset.cats ? card.dataset.cats.split(' ') : [];
+        return isAll || cats.includes(activeFilter);
+      });
+      projectCards.forEach(card => card.style.display = 'none');
+      if (isAll && !projExpanded) {
+        matching.forEach((card, i) => { if (i < LIMIT) card.style.display = ''; });
+        projShowMore.style.display = matching.length > LIMIT ? 'block' : 'none';
+        projShowMore.textContent = 'Show More';
+      } else {
+        matching.forEach(card => card.style.display = '');
+        projShowMore.style.display = isAll && matching.length > LIMIT ? 'block' : 'none';
+        if (isAll) projShowMore.textContent = 'Show Less';
+      }
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        projExpanded = false;
+        applyFilter();
+      });
+    });
+
+    projShowMore.addEventListener('click', () => {
+      const wasExpanded = projExpanded;
+      projExpanded = !projExpanded;
+      applyFilter();
+      /* Fix: when collapsing, scroll back to the projects heading, not coursework */
+      if (wasExpanded) {
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    applyFilter();
+  </script>
+
+</body>
+</html>
