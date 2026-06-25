@@ -237,6 +237,114 @@ integrating with parallel Whisper ASR, CNN audio analysis, and RAG-grounded LLM 
 
       
     <div class="grid" id="projects-grid">
+      <div class="card" data-cats="fs nlp ml">
+        <div class="card-image">
+          <img src="images/priv.jpeg" alt="SpeakEasy">
+        </div>
+        <h3>SpeakEasy</h3>
+        <a href="#" target="_blank" class="ghlink">
+          <img src="images/githubairdrop.PNG" alt="github" width="100%" height="auto">
+        </a>
+        <span class="hackathon-tag">Full Stack</span>
+        <span class="hackathon-tag">NLP / AI</span>
+        <span class="hackathon-tag">Machine Learning</span>
+        <div class="rounded_desc">
+          <p>Neo4j</p><p>Python</p><p>Whisper</p><p>CNN</p><p>Twilio</p><p>RL</p>
+        </div>
+        <ul class="project-points">
+          <li>Designed and implemented a Neo4j Knowledge Graph schema modeling user session history, phoneme-level pronunciation scores, and weak area detection to serve as the personalization backbone for an adaptive speech therapy application</li>
+          <li>Engineered a Python data pipeline that writes Whisper transcription outputs and CNN pronunciation scores to a graph database, enabling a Contextual Bandit RL agent to dynamically adapt exercise selection across 500+ users</li>
+          <li>Collaborated with a 4-person team to deliver a WhatsApp-native AI speech companion integrating Twilio, OpenAI Whisper, Mel Spectrogram + CNN audio analysis, RAG-grounded LLM feedback, and a Neo4j-backed personalization engine</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de geo">
+        <div class="card-image">
+          <img src="images/Automated document workflow systems for efficient management and organization of digital files _ Premium AI-generated image.jpeg" alt="Cloud School Pipeline">
+        </div>
+        <h3>Cloud-Based Geospatial School Analytics Pipeline</h3>
+        <a href="https://github.com/tianalongjam/Cloud-Based-Geospatial-School-Analytics-Pipeline-" target="_blank" class="ghlink">
+          <img src="images/githubairdrop.PNG" alt="github" width="100%" height="auto">
+        </a>
+        <span class="hackathon-tag">Data Engineering</span>
+        <span class="hackathon-tag">Geospatial</span>
+        <div class="rounded_desc">
+          <p>GCP</p><p>BigQuery</p><p>Dataform</p><p>GCS</p><p>SQL</p>
+        </div>
+        <ul class="project-points">
+          <li>Mapped public school access across all 72 Wisconsin counties by writing BigQuery geospatial SQL queries to analyze 2,000+ schools and identify nearest high schools to every middle school</li>
+          <li>Eliminated manual data integration by orchestrating 3 dependency-managed Dataform pipelines that automatically transform raw Parquet files into geospatial BigQuery tables with county-level joins</li>
+          <li>Enabled scalable statewide education analysis by architecting an end-to-end pipeline across 4 GCP services (GCS, Dataform, BigQuery, GCP VMs), provisioned from scratch on a cloud VM</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de ml">
+        <div class="card-image">
+          <img src="images/booksp2.jpeg" alt="Competitive Programming Analytics">
+        </div>
+        <h3>Competitive Programming Analytics</h3>
+        <a href="https://github.com/tianalongjam/Competitive-Programming-Analytics" target="_blank" class="ghlink">
+          <img src="images/githubairdrop.PNG" alt="github" width="100%" height="auto">
+        </a>
+        <span class="hackathon-tag">Data Engineering</span>
+        <span class="hackathon-tag">Machine Learning</span>
+        <div class="rounded_desc">
+          <p>Spark</p><p>Hive</p><p>PySpark MLlib</p><p>Gemini API</p>
+        </div>
+        <ul class="project-points">
+          <li>Reduced query latency by 85% by engineering a distributed analytics pipeline using Apache Spark and Hive to process 8,500+ programming problems and 170,000+ solutions, implementing bucketed tables to eliminate shuffle operations</li>
+          <li>Automated schema-aware prompt construction for deterministic query generation by developing a natural language SQL interface with the Gemini API to convert English queries into executable Spark SQL</li>
+          <li>Built a predictive ML pipeline to estimate missing difficulty scores using PySpark MLlib DecisionTreeRegressor, evaluating 10 tree depths and optimizing model performance through R² score analysis</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image">
+          <img src="images/Automated document workflow systems for efficient management and organization of digital files _ Premium AI-generated image.jpeg" alt="HDFS Pipeline">
+        </div>
+        <h3>Fault-Tolerant SQL-HDFS Data Pipeline</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc">
+          <p>Python</p><p>Docker</p><p>HDFS</p><p>SQL</p><p>gRPC</p><p>PyArrow</p>
+        </div>
+        <ul class="project-points">
+          <li>Improved query performance and fault tolerance by building a Python gRPC service that cached HDFS Parquet partitions and automatically recovered corrupted files after DataNode failures</li>
+          <li>Reduced data processing overhead for 426K+ mortgage records by implementing a SQL → HDFS pipeline with MySQL, PyArrow, and partition-based Parquet optimization</li>
+          <li>Enabled scalable distributed analytics by deploying a Docker-based ecosystem with MySQL, HDFS, WebHDFS APIs, and gRPC for replicated storage and block-level monitoring</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image">
+          <img src="images/Automated document workflow systems for efficient management and organization of digital files _ Premium AI-generated image.jpeg" alt="Address Lookup">
+        </div>
+        <h3>Distributed Address Lookup System</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc">
+          <p>gRPC</p><p>Docker</p><p>LRU Cache</p><p>Protobuf</p>
+        </div>
+        <ul class="project-points">
+          <li>Improved system reliability by architecting a fault-tolerant microservices system with 5 Docker containers, implementing gRPC communication, round-robin load balancing across 2 backend replicas, and automatic failover with exponential retry logic</li>
+          <li>Reduced backend load by designing a 3-node HTTP caching layer with LRU eviction policies, achieving cache hits for repeated zipcode queries and enabling degraded operation during complete failures</li>
+          <li>Enabled scalable processing of 50,000+ address records by developing a containerized data service using Protocol Buffers serialization and an automated Docker build pipeline</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cats="de">
+        <div class="card-image">
+          <img src="images/wisconsin.jpeg" alt="Weather System">
+        </div>
+        <h3>Distributed Weather Data System</h3>
+        <span class="hackathon-tag">Data Engineering</span>
+        <div class="rounded_desc">
+          <p>Cassandra</p><p>gRPC</p><p>Spark</p><p>Docker</p>
+        </div>
+        <ul class="project-points">
+          <li>Achieved 99% write availability during node failures by architecting a fault-tolerant gRPC server with a 3-node Cassandra cluster, implementing tunable consistency levels (W=1, R=2) to balance availability and reliability across 200+ Wisconsin weather stations</li>
+          <li>Enabled sub-second querying of time-series weather statistics by designing an automated PySpark pipeline to parse and load 10,000+ temperature records into a partitioned Cassandra schema with compound keys</li>
+          <li>Prevented stale reads by implementing graceful degradation strategies with dual read profiles, quorum-based validation, and prepared statements for consistent fallback behavior</li>
+        </ul>
+      </div>
 
       <!-- <div class="experience-grid"> -->
       <div class="card" data-cats="fs nlp hack">
